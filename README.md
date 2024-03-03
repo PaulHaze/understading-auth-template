@@ -1,1 +1,1 @@
-### Next Js / Typescript / Tailwind / Testing Template
+### Understanding Auth Template
