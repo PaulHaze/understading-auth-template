@@ -1,7 +1,7 @@
 {
-  "name": "nextjs-enterprise-starter",
+  "name": "understanding-auth-template",
   "version": "0.1.0",
-  "homepage": "https://github.com/PaulHaze/nextjs-ts-enterprise",
+  "homepage": "https://github.com/PaulHaze/understanding-auth-template",
   "private": true,
   "scripts": {
     "dev": "next dev --turbo",

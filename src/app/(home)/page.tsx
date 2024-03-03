@@ -1,8 +1,15 @@
 export default function Home() {
   return (
-    <div className="flex-center min-h-screen flex-col">
-      <h1 className="text-center">Barebones TW Enterprise Next Starter</h1>
-      <p className="text-center">Delete this and build something</p>
-    </div>
+    <main className="min-h-screen flex-col p-5">
+      <div className="mt-10">
+        <h1 className="text-center">Understanding Auth</h1>
+      </div>
+      <div className="flex-center w-full flex-col sm:flex-row">
+        <div className="flex-grow">
+          <h5 className="my-5">Please sign in to see the protected pages</h5>
+        </div>
+        <div className="flex-grow">LOG IN COMPONENT</div>
+      </div>
+    </main>
   );
 }

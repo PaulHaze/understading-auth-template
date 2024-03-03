@@ -4,8 +4,9 @@ import type { Metadata } from 'next';
 
 // !CHANGETHIS
 export const metadata: Metadata = {
-  title: 'CHANGE THIS',
-  description: 'CHANGE THIS',
+  title: 'Understanding Auth Template',
+  description:
+    'A starter repo which will serve as a base for various auth implementations',
 };
 
 export default function RootLayout({
