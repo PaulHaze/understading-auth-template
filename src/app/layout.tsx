@@ -2,7 +2,8 @@ import '@/styles/main.scss';
 
 import type { Metadata } from 'next';
 
-// !CHANGETHIS
+import { NavBar } from '@/components';
+
 export const metadata: Metadata = {
   title: 'Understanding Auth Template',
   description:
@@ -16,7 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <NavBar />
+        {children}
+      </body>
     </html>
   );
 }
