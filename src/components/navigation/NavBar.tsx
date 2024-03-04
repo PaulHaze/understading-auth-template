@@ -2,12 +2,12 @@
 
 import Link from 'next/link';
 
-import { HamburgerMenu } from './HamburgerMenu';
+import { MobileMenu } from './MobileMenu';
 
 export function NavBar() {
   return (
-    <nav className="w-full bg-black/70">
-      <div className="mx-auto flex max-w-md justify-between bg-transparent px-8 py-2 md:px-0">
+    <nav className="h-[65px] w-full bg-black/70">
+      <div className="mx-auto flex h-full max-w-md items-center justify-between bg-transparent px-8 py-2 md:px-0">
         <Link className="nav-link" href="/">
           Understanding Auth
         </Link>
@@ -19,9 +19,7 @@ export function NavBar() {
             Page two
           </Link>
         </div>
-        <div className="sm:hidden">
-          <HamburgerMenu />
-        </div>
+        <MobileMenu />
       </div>
     </nav>
   );

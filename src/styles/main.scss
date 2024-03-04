@@ -28,8 +28,11 @@
   .nav-link {
     @apply py-2 transition-all;
     &:hover {
-      border-bottom: 2px solid white;
-      padding-bottom: 0.5px;
+      @apply underline text-white/60;
+      text-underline-offset: 8px;
+      
+      // border-bottom: 2px solid white;
+      // padding-bottom: 0.5px;
     } 
   }
 }
