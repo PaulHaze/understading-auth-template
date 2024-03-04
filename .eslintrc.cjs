@@ -62,7 +62,6 @@ module.exports = {
           'error',
           { argsIgnorePattern: '^_' },
         ],
-        'unused-imports/no-unused-imports': 'error',
       },
     },
     // Configuration for testing

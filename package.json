@@ -23,6 +23,7 @@
     "@hookform/resolvers": "^3.3.4",
     "clsx": "^2.1.0",
     "framer-motion": "^11.0.8",
+    "hamburger-react": "^2.5.0",
     "next": "latest",
     "next-seo": "^6.5.0",
     "next-sitemap": "^4.2.3",
