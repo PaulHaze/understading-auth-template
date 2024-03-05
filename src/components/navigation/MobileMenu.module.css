@@ -1,0 +1,7 @@
+.mobileNavLink {
+  @apply py-2 w-full flex text-center transition-all hover:bg-white/20 rounded bg-gradient-to-tr from-neutral-800 via-neutral-950 to-neutral-700;
+}
+
+.mobileNavLink > a {
+    @apply flex justify-center items-center w-full bb;
+  }
