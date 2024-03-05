@@ -12,6 +12,10 @@ export function MobileMenu() {
   const [isOpen, setOpen] = useState(false);
   const ref = useRef(null);
 
+  const handleClick = () => {
+    setOpen(false);
+  };
+
   useClickAway(ref, () => setOpen(false));
   return (
     <div ref={ref} className="sm:hidden">
@@ -19,11 +23,21 @@ export function MobileMenu() {
       {isOpen && (
         <div className="fixed left-0 right-0 top-[3.5rem] border-b border-b-white/20 bg-[#05070C] p-5 pt-0 shadow-2xl">
           <ul className="grid gap-2">
-            <li className="w-full rounded-xl bg-gradient-to-tr from-neutral-800 via-neutral-950 to-neutral-700 p-[0.08rem]">
-              <Link href="/protected-one">Page one</Link>
+            <li
+              onClick={handleClick}
+              className="w-full rounded-xl bg-gradient-to-tr from-neutral-800 via-neutral-950 to-neutral-700 p-[0.08rem]"
+            >
+              <Link className="flex" href="/protected-one">
+                Page one
+              </Link>
             </li>
-            <li className="w-full rounded-xl bg-gradient-to-tr from-neutral-800 via-neutral-950 to-neutral-700 p-[0.08rem]">
-              <Link href="/protected-two">Page two</Link>
+            <li
+              onClick={handleClick}
+              className="w-full rounded-xl bg-gradient-to-tr from-neutral-800 via-neutral-950 to-neutral-700 p-[0.08rem]"
+            >
+              <Link className="flex" href="/protected-two">
+                Page two
+              </Link>
             </li>
           </ul>
         </div>
